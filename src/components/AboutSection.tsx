@@ -95,8 +95,9 @@ export function AboutSection() {
                             <h4 className="text-[#8C8FA6]">Lead the initiative to develop Acme mobile application interface.</h4>
                         </div>
                         <div className="flex items-center gap-4">
-                            <p>icon</p>
-                            <p className="text-2xl">Download Resume</p>
+                        <p><span className="font-bold text-2xl text-gray-700">&#8595;</span></p>
+                        <p className="text-2xl font-bold text-[#474747]">Download Resume</p>
+
                         </div>
                     </div>
                 </div>
