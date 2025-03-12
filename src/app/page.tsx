@@ -26,9 +26,7 @@ export default function Home() {
       </header>
       <div className="w-[720px]">
         <AboutSection />
-
       </div>
-
     </div>
   );
 }
