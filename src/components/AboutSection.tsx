@@ -1,4 +1,5 @@
 import { Title } from "./Title";
+import CustomLink from "./atoms/CustomLink";
 
 export function AboutSection() {
     return (
@@ -94,11 +95,9 @@ export function AboutSection() {
                             </div>
                             <h4 className="text-[#8C8FA6]">Lead the initiative to develop Acme mobile application interface.</h4>
                         </div>
-                        <div className="flex items-center gap-4">
-                        <p><span className="font-bold text-2xl text-gray-700">&#8595;</span></p>
-                        <p className="text-2xl font-bold text-[#474747]">Download Resume</p>
 
-                        </div>
+                        <CustomLink icon="&#8595;" label="Download Resume" />
+
                     </div>
                 </div>
             </div>

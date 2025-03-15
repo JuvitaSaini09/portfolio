@@ -1,11 +1,13 @@
 import { HiCard, EmployeeStatusCard } from "@/components/CardAnimated";
 import { AboutSection } from "@/components/AboutSection";
 import { ProjectSection } from "@/components/molecules/ProjectSection";
+import Connect from "@/components/molecules/Connect";
 
 export default function Home() {
   return (
-    <div className=" mb-5 flex flex-col items-center justify-center min-h-screen bg-[radial-gradient(circle,#d3d3d3_1.2px,transparent_1.2px)] bg-[size:26px_26px]">
+    <div className=" mb-2 flex flex-col items-center justify-center min-h-screen bg-[radial-gradient(circle,#d3d3d3_1.2px,transparent_1.2px)] bg-[size:26px_26px]">
       {/* parent */}
+
       <header className="relative h-screen flex items-center justify-center w-[720px]">
 
         {/* child1 */}
@@ -28,8 +30,13 @@ export default function Home() {
       <div className="w-[720px]">
         <AboutSection />
       </div>
+      
       <div className="w-[720px]">
         <ProjectSection />
+      </div>
+      
+      <div  className="w-[60%] md:w-[718px] ">
+        <Connect />
       </div>
     </div>
   );
