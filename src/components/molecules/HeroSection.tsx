@@ -1,17 +1,18 @@
 import React from 'react'
 import { EmployeeStatusCard, HiCard } from '../atoms/CardAnimated'
+import { candidateInfo } from "../../constants/data"
 
 const HeroSection = () => {
     return (
-        <header className="relative h-screen flex items-center justify-center">
+        <header className="relative h-screen flex flex-col md:flex-row items-center justify-center">
             {/* child1 */}
             <div className="flex flex-col items-center gap-1">
-                <h1 className="font-bold text-[52px] text-[#474747]">Hi, I&#39;m Juvita</h1>
-                <p className="font-gaegu font-bold text-[24px] text-[rgb(138,138,138)]">A passionate Frontend Developer.</p>
+                <h1 className="font-bold text-[52px] text-[#474747]">Hi, I&#39;m {candidateInfo.name}</h1>
+                <p className="font-gaegu font-bold text-[24px] text-[rgb(138,138,138)]">{candidateInfo.tagline}.</p>
             </div>
 
             {/* child2 */}
-            <div className="absolute top-[50%]  bottom-[-186px] right-[0]  w-[256px]">
+            <div className="md:absolute  top-[50%]  bottom-[-186px] right-[0]  w-[256px]">
                 <div className="relative">
                     <HiCard />
 

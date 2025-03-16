@@ -1,6 +1,7 @@
 import React from "react";
 import { Title } from "../atoms/Title";
-import { SvgIcons } from "../svg";
+import Link from "next/link";
+import { candidateInfo, socialLinks } from "@/constants/data";
 
 const Connect = () => {
   return (
@@ -15,32 +16,22 @@ const Connect = () => {
         <a
           href="mailto:juvitasaini@gmail.com"
           className="relative text-[38px] font-extralight text-[#474747] group">
-          juvitasaini@gmail.com
+          {candidateInfo.email}
           <span className="absolute bottom-[13px] block h-[3px] w-0 bg-[#474747] transition-all duration-0 group-hover:w-full"></span>
         </a>
 
 
 
-        <div className="flex gap-6">
-          <div className="flex gap-6">
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer">
-              <SvgIcons.Twitter />
-            </div>
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center  cursor-pointer">
-              <SvgIcons.LinkedIn />
-            </div>
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center  cursor-pointer">
-              <SvgIcons.Github />
-            </div>
+        <div className="flex gap-6 justify-center">
+          {socialLinks.map(({ id, url, Icon }: { id: string, url: string, Icon: any }) => (
+            < Link href={url} key={id} className="border-2 rounded-xl px-2 h-10 w-10 flex items-center justify-center cursor-pointer transition-transform duration-200 hover:scale-110"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon />
+            </Link>
 
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer ">
-              <SvgIcons.LeetCode />
-            </div>
-
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer ">
-              <SvgIcons.Arrow />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <form action="" className=" min-w-full flex flex-col gap-4">
@@ -54,7 +45,7 @@ const Connect = () => {
             placeholder="Message"
           />
         </div>
-        <button className="w-full border bg-[#5E5E5E] text-white h-10 rounded-2xl cursor-pointer hover:bg-[#3c3c3c]">Send</button>
+        <button className="w-full border bg-[#474747] text-white h-10 rounded-2xl cursor-pointer hover:bg-[#3c3c3c]">Send</button>
       </form>
     </div>
   );

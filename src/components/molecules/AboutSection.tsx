@@ -1,5 +1,9 @@
 import { Title } from "../atoms/Title";
 import CustomLink from "../atoms/CustomLink";
+import { experience, skills, socialLinks } from "@/constants/data";
+import Link from "next/link";
+import { candidateInfo } from "../../constants/data";
+import Image from "next/image";
 
 export function AboutSection() {
     return (
@@ -9,7 +13,13 @@ export function AboutSection() {
                 <div className="flex flex-col gap-4 p-4">
 
                     <div className="flex flex-col items-center gap-6">
-                        <div className="border-2 rounded-full h-32 w-32">
+
+                        <div className="border-2 rounded-full h-32 w-32 overflow-hidden bg-[#d1d0d0]">
+                            <Image
+                                src={candidateInfo.profileImg2}
+                                alt="profile"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                         <p className="text-[32px] font-bold">Yours Truly</p>
                     </div>
@@ -50,57 +60,59 @@ export function AboutSection() {
                 </div>
 
                 <div className="flex flex-col gap-10">
+                    {/* social links */}
                     <div className="flex flex-col gap-4">
                         <h3 className="text-[28px] font-bold">Links</h3>
                         <div className="flex gap-6">
-                            <div className="border-2 rounded-xl text-center px-2 ">Twitter</div>
-                            <div className="border-2 rounded-xl text-center px-2">Linkdin</div>
-                            <div className="border-2 rounded-xl text-center px-2">Github</div>
-                            <div className="border-2 rounded-xl text-center px-2">Leetcode</div>
+                            {socialLinks.map(({ id, url, Icon }) => (
+
+
+                                < Link href={url} key={id} className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer transition-transform duration-200 hover:scale-110"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Icon />
+                                </Link>
+
+                            ))}
                         </div>
                     </div>
 
+                    {/* skills  */}
                     <div className="flex flex-col gap-4">
-                        <h3 className="text-[28px] font-bold"> Skills</h3>
-                        <div className="flex flex-col gap-4 ">
-                            <div className="flex gap-6">
-                                <div className="border-2 rounded-xl text-center px-2 text-2xl">Framer</div>
-                                <div className="border-2 rounded-xl text-center px-2 text-2xl">UI design</div>
-                            </div>
-                            <div className="flex gap-6">
-                                <div className="border-2 rounded-xl text-center px-2 text-2xl">UX research</div>
-                                <div className="border-2 rounded-xl text-center px-2 text-2xl">Animation</div>
-                            </div>
-                            <div className="flex gap-6">
-                                <div className="border-2 rounded-xl text-center px-2 text-2xl">Animation</div>
-                                <div className="border-2 rounded-xl text-center px-2 text-2xl">Branding</div>
-                            </div>
+                        <h3 className="text-[28px] font-bold">Skills</h3>
+                        <div className="flex flex-wrap gap-4">
+                            {skills.map((skill, index) => (
+                                <div key={index} className="border-2 rounded-xl text-center px-2 text-2xl">
+                                    {skill}
+                                </div>
+                            ))}
                         </div>
                     </div>
+
+                    {/* experience  */}
                     <div className="flex flex-col gap-4">
                         <h3 className="text-[28px] font-bold">Experience</h3>
-                        <div>
-                            <h4 className="text-xl font-bold">Framer</h4>
-                            <div className="flex items-center gap-4">
-                                <p className="text-lg ">Senior Product Designer</p>
-                                <p className="text-[#8C8FA6]">2023 - Current</p>
-                            </div>
-                            <h4 className="text-[#8C8FA6]">I developed user-focused delightful digital experiences.</h4>
-                        </div>
-                        <div>
-                            <h4 className="text-xl font-bold">Acme</h4>
-                            <div className="flex items-center gap-4">
-                                <p className="text-lg ">Product Designer</p>
-                                <p className="text-[#8C8FA6]">2021 - 2023</p>
-                            </div>
-                            <h4 className="text-[#8C8FA6]">Lead the initiative to develop Acme mobile application interface.</h4>
-                        </div>
+                        {
+                            experience.map((experience: any, index: number) => {
+                                return (
+                                    <div key={index}>
+                                        <h4 className="text-xl font-bold">{experience.company}</h4>
+                                        <div className="flex items-center gap-4">
+                                            <p className="text-lg ">{experience.role}</p>
+                                            <p className="text-[#8C8FA6]">{experience.duration}</p>
+                                        </div>
+                                        <h4 className="text-[#8C8FA6]">{experience.description}.</h4>
+                                    </div>
 
+                                )
+                            })
+                        }
                         <CustomLink icon="&#8595;" label="Download Resume" />
 
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
