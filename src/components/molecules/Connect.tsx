@@ -23,21 +23,21 @@ const Connect = () => {
 
         <div className="flex gap-6">
           <div className="flex gap-6">
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center ">
+            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer">
               <SvgIcons.Twitter />
             </div>
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center ">
+            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center  cursor-pointer">
               <SvgIcons.LinkedIn />
             </div>
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center ">
+            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center  cursor-pointer">
               <SvgIcons.Github />
             </div>
 
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center ">
+            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer ">
               <SvgIcons.LeetCode />
             </div>
 
-            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center ">
+            <div className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer ">
               <SvgIcons.Arrow />
             </div>
           </div>

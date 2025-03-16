@@ -83,7 +83,7 @@ export const ProjectSection = () => {
                     return (
                         <div
                             key={index}
-                            className="relative w-[720px] flex gap-16 h-64 p-4 pr-16 bg-[rgba(255,255,255)] rounded-lg overflow-hidden  border-gray-300">
+                            className="relative w-[720px] flex gap-16 h-64 p-4 pr-16 bg-[rgba(255,255,255)] rounded-lg overflow-hidden  border-gray-300 cursor-pointer">
 
                             {/* Top Border */}
                             <div className="absolute top-0 left-0 w-full">

@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HoverLinkLine = ({ isHovered }) => {
+const HoverLinkLine = ({ isHovered }: { isHovered: boolean }) => {
     return (
         <svg width="170" height="50" viewBox="0 0 180 20" className="absolute bottom-[-30px] left-5">
             <motion.path
