@@ -23,7 +23,7 @@ const Connect = () => {
 
 
         <div className="flex gap-6 justify-center">
-          {socialLinks.map(({ id, url, Icon }: { id: string, url: string, Icon: any }) => (
+          {socialLinks.map(({ id, url, Icon }: { id: string, url: string, Icon: () => React.JSX.Element }) => (
             < Link href={url} key={id} className="border-2 rounded-xl px-2 h-10 w-10 flex items-center justify-center cursor-pointer transition-transform duration-200 hover:scale-110"
               target="_blank"
               rel="noopener noreferrer"

@@ -7,7 +7,7 @@ const HoverLines = () => {
 
   const lineVariants = {
     hidden: { pathLength: 0, opacity: 0 },
-    visible: (i) => ({
+    visible: (i : number) => ({
       pathLength: 1,
       opacity: 1,
       transition: { delay: i * 0.2, duration: 0.5, ease: "easeInOut" },

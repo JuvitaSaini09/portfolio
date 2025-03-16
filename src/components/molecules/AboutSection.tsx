@@ -94,7 +94,7 @@ export function AboutSection() {
                     <div className="flex flex-col gap-4">
                         <h3 className="text-[28px] font-bold">Experience</h3>
                         {
-                            experience.map((experience: any, index: number) => {
+                            experience.map((experience: Record<string, string | string[]>, index: number) => {
                                 return (
                                     <div key={index}>
                                         <h4 className="text-xl font-bold">{experience.company}</h4>
