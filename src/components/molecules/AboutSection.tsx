@@ -1,5 +1,5 @@
-import { Title } from "./Title";
-import CustomLink from "./atoms/CustomLink";
+import { Title } from "../atoms/Title";
+import CustomLink from "../atoms/CustomLink";
 
 export function AboutSection() {
     return (

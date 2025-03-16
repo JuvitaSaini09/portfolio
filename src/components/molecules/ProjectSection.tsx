@@ -1,5 +1,5 @@
 import React from "react";
-import { Title } from "../Title";
+import { Title } from "../atoms/Title";
 import Image from "next/image";
 import { VerticalLineCurved1, VerticalLineStraight } from "../atoms/VerticalLines";
 import { HorizontalLineCurved1, HorizontalLineCurved2 } from "../atoms/HorizontalLines";

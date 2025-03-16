@@ -1,10 +1,10 @@
 import React from "react";
-import { Title } from "../Title";
+import { Title } from "../atoms/Title";
 import { SvgIcons } from "../svg";
 
 const Connect = () => {
   return (
-    <div className="flex flex-col items-center w-full gap-24 mt-60 mb-50">
+    <div className="flex flex-col items-center w-full gap-24">
       <div>
         {" "}
         <Title label="Let's talk" />
