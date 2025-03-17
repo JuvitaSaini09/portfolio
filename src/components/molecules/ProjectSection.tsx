@@ -80,7 +80,7 @@ export const ProjectSection = () => {
                             </div>
                             <div className="flex flex-col gap-6 pt-8 w-[268px] overflow-hidden">
                                 <h3 className="text-[28px] font-bold">{project.title}</h3>
-                                <h4 className="text-[#8C8FA6]">{project.description}</h4>
+                                <h4 className="text-[#8C8FA6] hidden md:block">{project.description}</h4>
                             </div>
                         </div>
                     );

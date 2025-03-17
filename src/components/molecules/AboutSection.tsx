@@ -1,15 +1,18 @@
 import { Title } from "../atoms/Title";
 import CustomLink from "../atoms/CustomLink";
 import { experience, skills, socialLinks } from "@/constants/data";
-import Link from "next/link";
+// import Link from "next/link";
 import { candidateInfo } from "../../constants/data";
 import Image from "next/image";
+import SubTitle from "../atoms/SubTitle";
+import Skills from "../atoms/Skills";
+import Socials from "../atoms/Socials";
 
 export function AboutSection() {
     return (
         <div className="flex flex-col items-center w-full">
             <Title label="About" />
-            <div className="flex gap-10">
+            <div className="flex flex-col md:flex-row gap-10 px-4">
                 <div className="flex flex-col gap-4 p-4">
 
                     <div className="flex flex-col items-center gap-6">
@@ -24,7 +27,7 @@ export function AboutSection() {
                         <p className="text-[32px] font-bold">Yours Truly</p>
                     </div>
 
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 items-center">
                         <div className="flex  gap-4">
                             <div
                                 className={`p-4 bg-[#B8FFC6] shadow-[0_20px_10px_-14px_#4031a047] w-33 h-33 flex items-center justify-center`}>
@@ -59,50 +62,41 @@ export function AboutSection() {
 
                 </div>
 
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-10 items-center md:items-start">
                     {/* social links */}
-                    <div className="flex flex-col gap-4">
-                        <h3 className="text-[28px] font-bold">Links</h3>
+                    <div className="flex flex-col gap-4 items-center md:items-start">
+                        <SubTitle label="Links" />
                         <div className="flex gap-6">
-                            {socialLinks.map(({ id, url, Icon }) => (
-
-
-                                < Link href={url} key={id} className="border-2 rounded-xl text-center px-2 h-10 w-10 flex items-center justify-center cursor-pointer transition-transform duration-200 hover:scale-110"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <Icon />
-                                </Link>
+                            {socialLinks.map(({ id, url, Icon }, index) => (
+                                <Socials key={index} index={index} id={id} url={url} icon={<Icon />} />
 
                             ))}
                         </div>
                     </div>
 
                     {/* skills  */}
-                    <div className="flex flex-col gap-4">
-                        <h3 className="text-[28px] font-bold">Skills</h3>
+                    <div className="flex flex-col gap-4 items-center md:items-start max-w-md">
+                        <SubTitle label="Skills" />
                         <div className="flex flex-wrap gap-4">
                             {skills.map((skill, index) => (
-                                <div key={index} className="border-2 rounded-xl text-center px-2 text-2xl">
-                                    {skill}
-                                </div>
+                                <Skills key={index} skill={skill} index={index} />
                             ))}
                         </div>
                     </div>
 
                     {/* experience  */}
-                    <div className="flex flex-col gap-4">
-                        <h3 className="text-[28px] font-bold">Experience</h3>
+                    <div className="flex flex-col gap-4 items-center md:items-start">
+                        <SubTitle label="Experience" />
                         {
                             experience.map((experience: Record<string, string | string[]>, index: number) => {
                                 return (
-                                    <div key={index}>
+                                    <div key={index} className="flex flex-col items-center md:items-start">
                                         <h4 className="text-xl font-bold">{experience.company}</h4>
-                                        <div className="flex items-center gap-4">
+                                        <div className="flex gap-4">
                                             <p className="text-lg ">{experience.role}</p>
                                             <p className="text-[#8C8FA6]">{experience.duration}</p>
                                         </div>
-                                        <h4 className="text-[#8C8FA6]">{experience.description}.</h4>
+                                        <h4 className="text-[#8C8FA6]">{experience.description}</h4>
                                     </div>
 
                                 )

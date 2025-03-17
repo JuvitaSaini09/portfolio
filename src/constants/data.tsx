@@ -15,12 +15,12 @@ export const candidateInfo = {
 
 
 
-export const socialLinks = [
-    { id: "twitter", url: "https://x.com/SainiJuvita?s=03", Icon: SvgIcons.Twitter },
-    { id: "linkedin", url: "https://www.linkedin.com/in/juvitasaini/", Icon: SvgIcons.LinkedIn },
-    { id: "github", url: "https://github.com/JuvitaSaini09", Icon: SvgIcons.Github },
-    { id: "leetcode", url: "https://leetcode.com/u/Juvita_Saini/", Icon: SvgIcons.LeetCode },
-]
+    export const socialLinks = [
+        { id: "twitter", url: "https://x.com/SainiJuvita?s=03", Icon: SvgIcons.Twitter },
+        { id: "linkedin", url: "https://www.linkedin.com/in/juvitasaini/", Icon: SvgIcons.LinkedIn },
+        { id: "github", url: "https://github.com/JuvitaSaini09", Icon: SvgIcons.Github },
+        { id: "leetcode", url: "https://leetcode.com/u/Juvita_Saini/", Icon: SvgIcons.LeetCode },
+    ]
     ;
 export const skills = [
     "HTML5", "JavaScript", "React.js", "Next.JS", "TypeScript", "CSS3", "Tailwind CSS", "Material-UI", "Ant Design", "Recharts", "Git", "GitHub", "Cypress", "Socket.io",
