@@ -1,8 +1,7 @@
 "use client"
 
-import { motion } from "motion/react"
+import { motion, useInView } from "motion/react"
 import React from 'react';
-import { useInView } from "motion/react";
 
 export default function SubTitle({ label }: { label: string }) {
     const ref = React.useRef(null);
