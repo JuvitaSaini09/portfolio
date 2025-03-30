@@ -1,7 +1,7 @@
 import React from "react";
 import { Title } from "../atoms/Title";
-import Link from "next/link";
 import { candidateInfo, socialLinks } from "@/constants/data";
+import Socials from "../atoms/Socials";
 
 const Connect = () => {
   return (
@@ -23,16 +23,14 @@ const Connect = () => {
 
 
         <div className="flex gap-6 justify-center">
-          {socialLinks.map(({ id, url, Icon }: { id: string, url: string, Icon: () => React.JSX.Element }) => (
-            < Link href={url} key={id} className="border-2 rounded-xl px-2 h-10 w-10 flex items-center justify-center cursor-pointer transition-transform duration-200 hover:scale-110"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon />
-            </Link>
+
+
+          {socialLinks.map(({ id, url, Icon }, index) => (
+            <Socials key={index} index={index} id={id} url={url} icon={<Icon />} />
 
           ))}
         </div>
+
       </div>
       <form action="" className=" min-w-full flex flex-col gap-4">
         <div className=" flex gap-4">

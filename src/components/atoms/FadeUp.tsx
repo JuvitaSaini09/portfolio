@@ -8,12 +8,13 @@ import { useInView } from "motion/react";
 interface FadeUpProps {
   children: ReactNode;
   className?: string;
+  duration?: number;
 }
 
 // Simple animation wrapper that works with any element
-export default function FadeUp({ children, className = "" }: FadeUpProps) {
+export default function FadeUp({ children, className = "", duration }: FadeUpProps) {
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: duration || 0.2 });
 
   return (
     <motion.div

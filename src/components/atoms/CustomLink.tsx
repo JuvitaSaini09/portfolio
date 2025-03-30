@@ -1,18 +1,21 @@
 "use client";
 import React, { useState } from 'react'
 import HoverLinkLine from './HoverLinkLine';
+import FadeUp from './FadeUp';
 
 const CustomLink = ({ icon, label }: { icon: string, label: string }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="flex items-center gap-4 relative cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}>
-      <HoverLinkLine isHovered={isHovered} />
-      <p><span className="font-bold text-2xl text-gray-700">{icon}</span></p>
-      <p className="text-2xl font-bold text-[#474747]">{label}</p>
+    <FadeUp>
+      <div className="flex items-center gap-4 relative cursor-pointer"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}>
+        <HoverLinkLine isHovered={isHovered} />
+        <p><span className="font-bold text-2xl text-gray-700">{icon}</span></p>
+        <p className="text-2xl font-bold text-[#474747]">{label}</p>
+      </div>
+    </FadeUp>
 
-    </div>
   )
 }
 
