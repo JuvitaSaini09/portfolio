@@ -18,7 +18,7 @@ export const ProjectSection = () => {
                         <FadeUp duration={0.4} key={index}>
                             <Link href={project.link} target="_blank"
                                 // h-64
-                                className="relative w-[720px] flex gap-16  p-4 pb-5 pr-16 bg-[rgba(255,255,255)] rounded-lg overflow-hidden  border-gray-300 cursor-pointer">
+                                className="relative md:w-[720px] flex flex-col md:flex-row md:gap-16  p-4 md:pb-5 md:pr-16 bg-[rgba(255,255,255)] rounded-lg overflow-hidden  border-gray-300 cursor-pointer ">
 
                                 {/* Top Border */}
                                 <div className="absolute top-0 left-0 w-full pointer-events-none">
@@ -54,7 +54,7 @@ export const ProjectSection = () => {
                                         className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-120"
                                     />
                                 </div>
-                                <div className="flex flex-col gap-6 pt-8 w-[268px] overflow-hidden">
+                                <div className=" flex flex-col gap-6 pt-8 md:w-[268px] overflow-hidden">
                                     <h3 className="text-[28px] font-bold">{project.title}</h3>
                                     <h4 className="text-[#8C8FA6] hidden md:block">{project.description}</h4>
                                 </div>

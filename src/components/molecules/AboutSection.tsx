@@ -14,8 +14,8 @@ export function AboutSection() {
         <div className="flex flex-col items-center w-full gap-24">
             <Title label="About" />
             <div className="flex flex-col md:flex-row gap-10 px-4">
-                <div className="flex flex-col gap-4 p-4">
-                    <div className="flex flex-col items-center gap-6">
+                <div className="flex flex-col gap-16 md:gap-4 p-4  mb-40 md:mb-0">
+                    <div className="flex flex-col items-center gap-10 ">
                         <FadeUp>
                             <div className="border-2 rounded-full h-32 w-32 overflow-hidden bg-[#d1d0d0]">
                                 <Image
@@ -31,8 +31,7 @@ export function AboutSection() {
                         </FadeUp>
 
                     </div>
-                    {/* <TiltIn angle={45}>
-                    </TiltIn> */}
+
                     <div className="flex flex-col gap-4 items-center">
                         <div className="flex gap-3">
 
@@ -81,7 +80,7 @@ export function AboutSection() {
 
                 </div>
 
-                <div className="flex flex-col gap-10 items-center md:items-start">
+                <div className="flex flex-col gap-16 items-center md:items-start">
                     {/* social links */}
                     <div className="flex flex-col gap-4 items-center md:items-start">
                         <SubTitle label="Links" />
@@ -96,7 +95,7 @@ export function AboutSection() {
                     {/* skills  */}
                     <div className="flex flex-col gap-4 items-center md:items-start max-w-md">
                         <SubTitle label="Skills" />
-                        <div className="flex flex-wrap gap-4">
+                        <div className="p-10 md:p-0 flex justify-center items-center flex-wrap  gap-4">
                             {skills.map((skill, index) => (
                                 <Skills key={index} skill={skill} index={index} />
                             ))}
@@ -104,7 +103,7 @@ export function AboutSection() {
                     </div>
 
                     {/* experience  */}
-                    <div className="flex flex-col gap-4 items-center md:items-start">
+                    <div className="flex flex-col gap-6 items-center md:items-start">
                         <SubTitle label="Experience" />
                         {
                             experience.map((experience: Record<string, string | string[]>, index: number) => {

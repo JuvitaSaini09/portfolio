@@ -4,7 +4,7 @@ import { candidateInfo } from "../../constants/data"
 
 const HeroSection = () => {
     return (
-        <header className="relative h-screen flex flex-col md:flex-row items-center justify-center">
+        <header className="relative h-screen flex flex-col md:flex-row gap-7 md:gap-0 items-center justify-center">
             {/* child1 */}
             <div className="flex flex-col items-center gap-1">
                 <h1 className="font-bold text-[52px] text-[#474747]">Hi, I&#39;m {candidateInfo.name}</h1>
