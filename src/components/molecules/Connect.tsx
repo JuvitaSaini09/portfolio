@@ -32,8 +32,8 @@ const Connect = () => {
         </div>
 
       </div>
-      <form action="" className=" min-w-full flex flex-col gap-4">
-        <div className=" flex gap-4">
+      <form action="" className=" min-w-full  flex flex-col gap-4">
+        <div className=" flex flex-col md:flex-row gap-4">
           <input className=" focus:outline-violet-500 border-2 border-[#474747] bg-white grow-1 h-12 p-4 rounded-2xl" type="text" placeholder="Your Name" />
           <input className="focus:outline-violet-500 border-2 border-[#474747] bg-white grow-1 h-12 p-4 rounded-2xl" type="email" placeholder="Your Email" />
         </div>
