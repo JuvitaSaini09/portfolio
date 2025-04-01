@@ -18,7 +18,6 @@ const CurvedArrow = () => {
                 strokeLinecap="round"
                 fill="transparent"
                 initial={{ pathLength: 0 }}
-                // animate={{ pathLength: 1 }}
                 animate={isInView ? { pathLength: 1 } : {}}
 
                 transition={{ duration: 1, ease: "easeInOut" }}
@@ -31,9 +30,7 @@ const CurvedArrow = () => {
                 strokeLinejoin="round"
                 fill="transparent"
                 initial={{ pathLength: 0, opacity: 0 }}
-                // animate={{ pathLength: 1, opacity: 1 }}
                 animate={isInView ? { pathLength: 1, opacity: 1 } : {}}
-
                 transition={{ duration: 1, ease: "easeInOut", delay: 0.8 }}
             />
 

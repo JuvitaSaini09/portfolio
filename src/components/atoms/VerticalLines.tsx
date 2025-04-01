@@ -8,11 +8,11 @@ import { motion } from "framer-motion"
 //left
 export const VerticalLineCurved1 = () => {
     return (
-        <svg width="" height="256" >
+        <svg width="" height="800" >
             <motion.path
                 stroke="#474747"
                 strokeWidth="3"
-                d="M50 0 C60 50,40 200, 50 256"
+                d="M50 0 C60 50,40 200, 50 600"
                 strokeLinecap="round"
                 fill="none"
             />
@@ -23,11 +23,11 @@ export const VerticalLineCurved1 = () => {
 //right
 export const VerticalLineStraight = () => {
     return (
-        <svg width="" height="256">
+        <svg width="" height="800">
         <motion.path
             stroke="#474747"
             strokeWidth="6"
-            d="M0 0,0 248"
+            d="M0 0,0 600"
             strokeLinecap="round"
             fill="none"
         />

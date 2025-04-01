@@ -36,7 +36,6 @@ export function AboutSection() {
                         </div>
 
                     </div>
-
                     <div className="flex flex-col gap-4 items-center">
                         <div className="flex gap-3">
 
