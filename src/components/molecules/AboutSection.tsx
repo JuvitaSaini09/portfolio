@@ -8,6 +8,7 @@ import Skills from "../atoms/Skills";
 import Socials from "../atoms/Socials";
 import FadeUp from "../atoms/FadeUp";
 import TiltIn from "../atoms/TiltIn";
+import CurvedArrow from "../atoms/CurvedArrow";
 
 export function AboutSection() {
     return (
@@ -15,7 +16,7 @@ export function AboutSection() {
             <Title label="About" />
             <div className="flex flex-col md:flex-row gap-10 px-4">
                 <div className="flex flex-col gap-16 md:gap-4 p-4  mb-40 md:mb-0">
-                    <div className="flex flex-col items-center gap-10 ">
+                    <div className="flex flex-col items-center gap-10 relative">
                         <FadeUp>
                             <div className="border-2 rounded-full h-32 w-32 overflow-hidden bg-[#d1d0d0]">
                                 <Image
@@ -29,6 +30,10 @@ export function AboutSection() {
                         <FadeUp>
                             <p className="text-[32px] font-bold">Yours Truly</p>
                         </FadeUp>
+
+                        <div className="absolute bottom-[-20px] left-[-30px] md:bottom-[-20px] md:left-[-100px]">
+                            <CurvedArrow />
+                        </div>
 
                     </div>
 
@@ -76,8 +81,6 @@ export function AboutSection() {
 
                         </div>
                     </div>
-
-
                 </div>
 
                 <div className="flex flex-col gap-16 items-center md:items-start">
