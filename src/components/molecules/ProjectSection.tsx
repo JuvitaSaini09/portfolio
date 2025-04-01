@@ -65,7 +65,7 @@ export const ProjectSection = () => {
                 })}
 
 
-                <CustomLink icon="&#8594;" label="View all projects" />
+                <CustomLink link="/" icon="&#8594;" label="View all projects" newTab={false} />
             </div>
         </div>
     );

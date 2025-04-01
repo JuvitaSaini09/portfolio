@@ -1,8 +1,8 @@
 import { SvgIcons } from "@/components/svg";
 import profileImg2 from "../../public/images/profileImg2.png"
 import videoLibraryImg from "../../public/images/videoLibrary.png"
-import componentLibrary from "../../public/images/componentLibrary.png"
-import ecom from "../../public/images/ecom.png"
+import componentLibrary from "../../public/images/componentLibrary.webp"
+import ecom from "../../public/images/ecom.webp"
 
 export const candidateInfo = {
     name: "Juvita Saini",
@@ -32,7 +32,7 @@ export const experience = [
         company: "CarbinMinus",
         role: "Frontend Developer",
         duration: "Sep, 2023 - Feb, 2025",
-        description: "Building interactive UI components and optimizing performance.",
+        description: "Built scalable, high-performance UI components, improving responsiveness and user engagement through optimized rendering and efficient state management.🚀",
         detailedExperience: [
             "Developed a real-time alert feature using Socket.io for instant notifications.",
             "Implemented various charts using Recharts to visualize data effectively.",
