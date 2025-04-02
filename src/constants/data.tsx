@@ -29,7 +29,7 @@ export const skills = [
 
 export const experience = [
     {
-        company: "CarbinMinus",
+        company: "CarbonMinus",
         role: "Frontend Developer",
         duration: "Sep, 2023 - Feb, 2025",
         description: "Built scalable, high-performance UI components, improving responsiveness and user engagement through optimized rendering and efficient state management.🚀",

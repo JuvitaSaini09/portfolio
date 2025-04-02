@@ -116,7 +116,7 @@ export function AboutSection() {
                                             <p className="text-xl ">{experience.role}</p>
                                             <p className="text-xl text-[#8C8FA6]">{experience.duration}</p>
                                         </div></FadeUp>
-                                        <FadeUp><h4 className="text-[#8C8FA6] max-w-lg md:max-w-2xl">{experience.description}</h4></FadeUp>
+                                        <FadeUp><h4 className="text-[#8C8FA6] max-w-lg md:max-w-2xl text-center md:text-left">{experience.description}</h4></FadeUp>
                                     </div>
 
 
