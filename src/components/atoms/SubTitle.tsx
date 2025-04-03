@@ -13,7 +13,7 @@ export default function SubTitle({ label }: { label: string }) {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0 }}
             transition={{ duration: 1.2, type: "spring", damping: 10, stiffness: 100 }}
-            className="text-[28px] font-bold">
+            className="text-[28px] font-bold text-[#474747]">
             {label}
         </motion.h3>
     )

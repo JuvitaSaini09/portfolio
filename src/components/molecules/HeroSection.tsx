@@ -8,7 +8,7 @@ const HeroSection = () => {
             {/* child1 */}
             <div className="flex flex-col items-center gap-1">
                 <h1 className="font-bold text-[52px] text-[#474747]">Hi, I&#39;m {candidateInfo.name}</h1>
-                <p className="font-gaegu font-bold text-[24px] text-[rgb(138,138,138)]">{candidateInfo.tagline}.</p>
+                <p className="font-gaegu font-bold text-[24px] text-[rgb(138,138,138)] gaegu-font">{candidateInfo.tagline}.</p>
             </div>
 
             {/* child2 */}

@@ -54,8 +54,8 @@ export const ProjectSection = () => {
 
                                 </div>
                                 <div className=" flex flex-col gap-6 pt-8 md:w-[268px] lg:w-[430px] overflow-hidden">
-                                    <h3 className="text-[28px] font-bold">{project.title}</h3>
-                                    <h2 className="text-xl text-[#8C8FA6] hidden md:block">{project.description}</h2>
+                                    <h3 className="text-[28px] font-bold text-[#474747]">{project.title}</h3>
+                                    <h2 className="text-xl text-[#8C8FA6] hidden md:block gaegu-font">{project.description}</h2>
                                 </div>
                             </Link>
                         </FadeUp>

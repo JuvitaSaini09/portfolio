@@ -21,7 +21,7 @@ const CustomLink = ({ icon, label, link, newTab = false }: { icon: string, label
         >
           <HoverLinkLine isHovered={isHovered} />
           <p><span className="font-bold text-2xl text-gray-700">{icon}</span></p>
-          <p className="text-2xl font-bold text-[#474747]">{label}</p>
+          <p className="text-2xl font-bold text-[#474747] gaegu-font">{label}</p>
         </motion.div>
       </Link>
 
