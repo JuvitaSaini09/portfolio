@@ -3,15 +3,16 @@ import profileImg2 from "../../public/images/profileImg2.png"
 import videoLibraryImg from "../../public/images/videoLibrary.png"
 import componentLibrary from "../../public/images/componentLibrary.webp"
 import ecom from "../../public/images/ecom.webp"
+import blogMemo from "../../public/images/blogMemo.png"
+import createNpmImg from "../../public/images/createNpm.png"
 
 export const candidateInfo = {
     name: "Juvita Saini",
     email: "juvitasaini@gmail.com",
     tagline: "A passionate Frontend Developer",
     portfolio: "https://juvitasaini09.github.io/portfolio/",
-    downloadResumeLink: "",
-    profileImg: "https://camo.githubusercontent.com/46ccd10dc96115c5aea13ea7c8680f7ec0886c9cfc8f5fb1fef88f5cbbdb3eb3/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f41503147637a4f4f4632384564434250445f51554153586558507233492d465a737a7156494c446176597442664339467578694a6a695178477a6772754a6370586d5a6d6e7279706c594b444c77556c64436a362d3565537a325255725f2d3645707668526f5439364357304438626c5446704e4a6c547a676e7450526d37452d30694f5669506a4f785f7a6378305735494b647077434b6b5455573d773832372d683632302d732d6e6f2d676d3f61757468757365723d30",
     profileImg2: profileImg2,
+    mediumLink: "https://medium.com/@juvitasaini"
 }
 
 
@@ -25,7 +26,6 @@ export const socialLinks = [
 export const skills = [
     "HTML5", "JavaScript", "React.js", "Next.JS", "TypeScript", "CSS3", "Tailwind CSS", "Material-UI", "Ant Design", "Recharts", "Git", "GitHub", "Cypress", "Socket.io",
 ];
-//"Postman",  "Styled Components"
 
 export const experience = [
     {
@@ -87,37 +87,6 @@ export const mainProjects = [
 
 
 export const projects = [
-    // {
-    //     title: "Video Library Web App",
-    //     description: "This is a video library web app. This is a front-end project. It has mainly the following features: Home, Playlists, Liked, Watch Later, History. Technologies used are: ReactJS, Mockbee for mock backend.",
-    //     link: "https://github.com/JuvitaSaini09/quartz-video-lib-react",
-    //     imgUrl: "https://plus.unsplash.com/premium_photo-1720796408865-77661f4f23c7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dmlkZW8lMjBsaWJyYXJ5fGVufDB8fDB8fHww",
-    //     liveLink: "https://quartz-video-library.netlify.app/",
-    //     category: "Neog Major Project",
-    //     technologies: "ReactJS, Mockbee",
-    //     date: "",
-    // },
-    // {
-    //     title: "Component Library Web App",
-    //     description: "BuildUI is a component library built using HTML and CSS. You can use this component library in your projects. With the help of this library, you don’t need to code from scratch; you just pick components.",
-    //     link: "https://github.com/JuvitaSaini09/build-ui-cl",
-    //     imgUrl: "",
-    //     liveLink: "https://build-ui-component-library.netlify.app/",
-    //     category: "Neog Major Project",
-    //     technologies: "HTML, CSS",
-    //     date: "",
-    // },
-    // {
-    //     title: "Ecommerce Store",
-    //     description: "Quartz Book Store is an e-commerce website. It is made with HTML and CSS. It has the following features: Home Page, Product Listing Page, Filters by option (three categories), Cart Management, Wishlist Management, and Authentication page.",
-    //     link: "https://github.com/JuvitaSaini09/quartz-ecom-react",
-    //     imgUrl: "",
-    //     liveLink: "https://quartz-ecom-books.netlify.app/",
-    //     category: "Neog Major Project",
-    //     technologies: "HTML, CSS",
-    //     date: "",
-    // },
-
     ...mainProjects,
     {
         title: "WEB BUDDIES: Cool design",
@@ -285,8 +254,18 @@ export const blogs = [
     {
         title: "useMemo vs memo in React",
         link: "https://medium.com/@juvitasaini/usememo-vs-memo-in-react-8c9da370dbdc",
-        img: "",
-        description: "In this article, we will explore the differences between the useMemo and memo hooks in React and when to use each one.",
+        imgUrl: blogMemo,
+        description: "When optimizing performance in a React application, two useful tools at your disposal are useMemo and memo. While both serve the purpose of optimization, they are used in different scenarios and ways. Let's explore these differences with examples...",
+    },
+    {
+        title: "Create Your Own NPM Package",
+        link: "https://medium.com/@juvitasaini/how-to-create-your-own-npm-package-a-step-by-step-guide-88c0005f9698",
+        imgUrl: createNpmImg,
+        description: "Have you ever wanted to share your JavaScript code with the world and make it easily accessible for others to use in their projects? Creating your own NPM (Node Package Manager) package allows you to do just that! In this step-by-step guide, we will walk you through the process of creating and publishing your very own NPM package...",
     },
 ]
 
+
+
+
+// When optimizing performance in a React application, two useful tools at your disposal are useMemo and memo. While both serve the purpose of optimization, they are used in different scenarios and ways. Let's explore these differences with examples.

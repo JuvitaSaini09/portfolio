@@ -2,6 +2,7 @@ import { AboutSection } from "@/components/molecules/AboutSection";
 import { ProjectSection } from "@/components/molecules/ProjectSection";
 import Connect from "@/components/molecules/Connect";
 import HeroSection from "@/components/molecules/HeroSection";
+import { BlogSection } from "@/components/molecules/BlogSection";
 
 
 export default function Home() {
@@ -17,6 +18,10 @@ export default function Home() {
 
       <div className="w-full max-w-[720px] px-4">
         <ProjectSection />
+      </div>
+
+      <div className="w-full max-w-[720px] px-4" >
+        <BlogSection />
       </div>
 
       <div className="w-full max-w-[720px] px-4 md:w-[720px]">
