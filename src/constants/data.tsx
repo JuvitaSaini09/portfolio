@@ -15,7 +15,7 @@ export const candidateInfo = {
   profileImg2: profileImg2,
   mediumLink: "https://medium.com/@juvitasaini",
   resumeLink:
-    "https://drive.google.com/file/d/1z2DSx8C7XDxNnIq4C-sNtOdp6pO9kRuJ/view?usp=drive_link",
+    "https://drive.google.com/file/d/1_LtZQyPXvMpd6n-0QtjKBgh4aEPc5QCW/view?usp=drive_link",
 };
 
 export const socialLinks = [
@@ -35,6 +35,11 @@ export const socialLinks = [
     url: "https://leetcode.com/u/Juvita_Saini/",
     Icon: SvgIcons.LeetCode,
   },
+  {
+    id: "medium",
+    url: "https://medium.com/@juvitasaini",
+    Icon: SvgIcons.Medium,
+  }
 ];
 export const skills = [
   "HTML5",
@@ -51,9 +56,27 @@ export const skills = [
   "GitHub",
   "Cypress",
   "Socket.io",
+  "Prisma",
+  "Learning Backend",
 ];
 
 export const experience = [
+  {
+    company: "NimbusNext",
+    role: "Jr. Software Associate",
+    duration: "Aug, 2025 - Present",
+    description:
+      "Developing production-grade SaaS features using Next.js, AI integrations, and secure authentication workflows to deliver scalable and intelligent user experiences. ⚡",
+    detailedExperience: [
+      "Built production-ready features using Next.js 15+, TypeScript, and Tailwind CSS in a fast-paced SaaS environment.",
+      "Implemented secure SSO authentication and migrated sensitive tokens from client-side to server-side using Next.js Server Actions, improving application security.",
+      "Extracted and modularized internal reports from a large monorepo into independent repositories to improve maintainability and deployment workflows.",
+      "Developed a rich text editor with advanced formatting features using the Tiptap framework.",
+      "Integrated RAG vector APIs and engineered LLM prompts to deliver context-aware AI responses.",
+      "Worked with Prisma ORM along with PostgreSQL and MongoDB for efficient data modeling and querying.",
+      "Collaborated across teams to deliver scalable features aligned with product and system architecture goals."
+    ],
+  },
   {
     company: "CarbonMinus",
     role: "Frontend Developer",

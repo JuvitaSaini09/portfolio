@@ -45,7 +45,7 @@ export function AboutSection() {
                 >
                   <p className="text-center text-lg font-bold text-[#474747] gaegu-font">
                     {" "}
-                    Year+ Startup Experience
+                    2+ Years of Startup Experience
                   </p>
                 </div>
               </TiltIn>
@@ -130,7 +130,7 @@ export function AboutSection() {
           {/* skills  */}
           <div className="flex flex-col gap-4 items-center md:items-start max-w-md">
             <SubTitle label="Skills" />
-            <div className=" p-10 md:p-0 flex justify-center items-center flex-wrap  gap-4">
+            <div className=" p-10 md:p-0 flex items-center flex-wrap  gap-4">
               {skills.map((skill, index) => (
                 <Skills key={index} skill={skill} index={index} />
               ))}

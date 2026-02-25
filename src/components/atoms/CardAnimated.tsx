@@ -25,7 +25,7 @@ export function EmployeeStatusCard() {
             whileHover={{ scale: 1.1, rotate: 0, transition: { duration: 0.2 } }}
             transition={{ type: "spring", damping: 8, stiffness: 80, mass: 1 }}
             className={`p-4 bg-[#B8FFC6] shadow-[0_20px_10px_-14px_#4031a047] w-33 h-33 flex items-center justify-center absolute top-[70px] z-1 cursor-move`}>
-            <p className="text-center text-xl font-bold text-[#474747] gaegu-font">Available for hiring</p>
+            <p className="text-center text-xl font-bold text-[#474747] gaegu-font">Available for hire</p>
         </motion.div>
     );
 }
