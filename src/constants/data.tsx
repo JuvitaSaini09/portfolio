@@ -15,7 +15,7 @@ export const candidateInfo = {
   profileImg2: profileImg2,
   mediumLink: "https://medium.com/@juvitasaini",
   resumeLink:
-    "https://drive.google.com/file/d/1_LtZQyPXvMpd6n-0QtjKBgh4aEPc5QCW/view?usp=drive_link",
+    "https://drive.google.com/file/d/1oVSCJYKD0quOaoM0pB58Awwi8wu1KLdo/view?usp=drive_link",
 };
 
 export const socialLinks = [
